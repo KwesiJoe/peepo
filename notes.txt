@@ -1,0 +1,18 @@
+Django the manager-managed pattern for user management.
+
+The UserManager class is used in the creation, deleting and updating a user object.
+
+the hierachy for the user manager is:
+
+BaseManager -> Manager -> BaseUserManager -> UserManager
+
+
+The default user object also has this hierachy:
+
+models.Model -> AbstractBaseUser -> AbstractUser -> User
+
+
+and by default AUTH_USER_MODEL - which captures the model to use to represent a User - is set to 'auth.User'
+
+
+NB: an object can be imported from another namespace that imports it. 

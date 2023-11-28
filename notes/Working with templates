@@ -1,0 +1,9 @@
+templates are html files rendered by views
+
+template tags provide arbitrary logic in the rendering process.
+Tags are surrounded by {% and %} like this: {% csrf_token %}
+link to built in tag reference https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#ref-templates-builtins-tags
+
+to keep things modular and reusable, a {% block name %} can used. blocks can be seen as a place on the base html document
+where you want to put other contents later. see https://docs.djangoproject.com/en/4.2/ref/templates/language/#template-inheritance.
+
